@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    Padding="25"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AndroidEmptyPickerTest"
+    x:Class="AndroidEmptyPickerTest.AndroidEmptyPickerTestPage">
+	<StackLayout
+        Orientation="Vertical">
+       <Picker
+            Title="Default Picker"
+            ItemsSource="{Binding PickerData}"
+            SelectedItem="{Binding PickerSelectedItem}" />
+       <local:BorderlessPicker
+            Title="Extended Picker"
+            ItemsSource="{Binding PickerData}"
+            SelectedItem="{Binding PickerSelectedItem}" />
+    </StackLayout>
+</ContentPage>
